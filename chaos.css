@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  color: #ffffff;
+  background: linear-gradient(to bottom, #4a0e19, #250006);
+}
+
+
+
+.content-wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 5vw;
+  text-align: center;
+
+  position: relative;
+  z-index: 2;
+
+}
+
+.intro {
+  font-size: 1.6rem;
+  line-height: 1.9;
+  margin-bottom: 30px;
+  color: #ffccff;
+}
+
+.content-wrapper img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(255, 0, 120, 0.4);
+  margin-bottom: 40px;
+}
+
+.link {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ff66c4;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+.section-title {
+  font-size: 2rem;
+  margin: 30px 0 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.vertical-text {
+  font-size: 1.1rem;
+  line-height: 2;
+  margin: 0 auto 40px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.program-list {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  text-align: left;
+  line-height: 2;
+  font-size: 1.05rem;
+}
+
+.red {
+  color: #ffcccc;
+}
+.floating-box {
+  position: absolute;
+  z-index: 0;
+  animation: float 6s ease-in-out infinite;
+  opacity: 0.6;
+  border-radius: 6px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.box1 { width: 150px; height: 150px; top: 10%; left: 8%; background-color: #ff3d3d; }
+.box2 { width: 80px; height: 80px; top: 50%; right: 15%; background-color: #ff6b6b; }
+.box3 { width: 60px; height: 60px; top: 30%; left: 40%; background-color: #ff9999; }
+.box4 { width: 70px; height: 70px; bottom: 10%; left: 25%; background-color: #ff5e5e; }
+.box5 { width: 40px; height: 40px; bottom: 5%; right: 10%; background-color: #ff7f7f; }
+.floating-box {
+  position: absolute;
+  z-index: 0;
+  animation: float 5s ease-in-out infinite alternate;
+  opacity: 0.85;  
+  border-radius: 8px;
+}
+.box1 { width: 150px; height: 150px; top: 8%; left: 6%; background-color: #3e1f24; }     /* dark red-brown */
+.box2 { width: 100px; height: 100px; top: 35%; right: 8%; background-color: #1e1d32; }  /* navy grey-blue */
+.box3 { width: 60px; height: 60px; top: 25%; left: 40%; background-color: #2e1c29; }    /* muted wine */
+.box4 { width: 70px; height: 70px; bottom: 10%; left: 25%; background-color: #342b38; } /* violet-black */
+.box5 { width: 50px; height: 50px; bottom: 5%; right: 10%; background-color: #231f20; } /* near black */
+.box6 { width: 60px; height: 60px; top: 70%; left: 5%; background-color: #492c38; }     /* burgundy plum */
+.box7 { width: 80px; height: 80px; bottom: 35%; right: 40%; background-color: #402932; }
+.box8 { width: 70px; height: 70px; bottom: 15%; left: 45%; background-color: #281c27; }
+.box9 { width: 100px; height: 100px; top: 60%; right: 20%; background-color: #1d1d24; }
+.box10 { width: 90px; height: 90px; top: 15%; left: 60%; background-color: #1a2639; }  /* dark navy */
+.box11 { width: 70px; height: 70px; top: 75%; right: 20%; background-color: #243447; } /* slate blue */
+.box12 { width: 100px; height: 100px; bottom: 20%; left: 10%; background-color: #2d3e50; } /* blue grey */
+
+
+@keyframes float {
+  0%   { transform: translateY(0px) rotate(0deg); }
+  50%  { transform: translateY(-30px) rotate(2deg); }
+  100% { transform: translateY(15px) rotate(-2deg); }
+}
+@keyframes float1 {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-30px) rotate(2deg); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-15px) rotate(-1deg); }
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-40px) rotate(4deg); }
+}
+
+@keyframes float4 {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-25px) rotate(-3deg); }
+}
+
+@keyframes float5 {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-35px) rotate(1deg); }
+}
+.box1 { animation-name: float1; }
+.box2 { animation-name: float2; }
+.box3 { animation-name: float3; }
+.box4 { animation-name: float4; }
+.box5 { animation-name: float5; }
+.box6 { animation-name: float3; }
+.box7 { animation-name: float2; }
+.box8 { animation-name: float4; }
+.box9 { animation-name: float1; }
+.box10 { animation-name: float5; }
+.box11 { animation-name: float2; }
+.box12 { animation-name: float3; }
+.box1 { animation-duration: 6s; }
+.box2 { animation-duration: 7s; }
+.box3 { animation-duration: 5s; }
+.box4 { animation-duration: 8s; }

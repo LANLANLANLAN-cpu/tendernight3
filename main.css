@@ -1,0 +1,115 @@
+/* STYLE FOR YOU MAIN.HTML */
+body {
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  color: white;
+}
+
+html {
+  font-size: 100%;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery img {
+    max-width: 90%;
+  }
+}
+
+.content {
+  background-color: #0e0e20;
+  padding: 40px 0 20px 0;
+  animation: fadeIn 2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  padding: 0 5vw;
+}
+
+.intro {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05) rotate(2deg);
+  filter: brightness(1.1);
+}
+
+.links .link {
+  display: inline-block;
+  margin-right: 20px;
+  color: #a3f7bf;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.links .link.external::after {
+  content: "\2197";
+  margin-left: 5px;
+}
+
+.links .link:hover {
+  color: #ffe194;
+  transform: scale(1.05);
+}
+
+.floating-box {
+  position: absolute;
+  z-index: 1;
+  animation: float 6s ease-in-out infinite;
+  opacity: 0.7;
+  border-radius: 6px;
+}
+
+.box3 { width: 120px; height: 120px; bottom: 10%; left: 30%; background-color: #a8e6cf; transform: rotate(15deg); }
+.smallblock3 { width: 50px; height: 50px; bottom: 12%; left: 40%; background-color: #bdb2ff; }
+.smallblock4 { width: 25px; height: 25px; bottom: 20%; left: 33%; background-color: #fdffb6; }
+.smallblock5 { width: 35px; height: 35px; bottom: 18%; right: 20%; background-color: #ffd6a5; }
+.smallblock6 { width: 20px; height: 20px; bottom: 10%; left: 50%; background-color: #a0c4ff; }
+.smallblock10 { width: 30px; height: 30px; bottom: 12%; left: 55%; background-color: #fce1e4; }
+.smallblock11 { width: 40px; height: 40px; bottom: 14%; left: 60%; background-color: #e0f7fa; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}

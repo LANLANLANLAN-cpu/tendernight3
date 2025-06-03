@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  color: #f0f0f0;
+  background: linear-gradient(to bottom right, #013c3c, #115e59);
+}
+
+.content-wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 5vw;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.intro {
+  font-size: 1.6rem;
+  line-height: 1.9;
+  margin-bottom: 30px;
+  color: #d0f7e7;
+}
+
+.content-wrapper img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+}
+
+.link {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #a3f7bf;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+.section-title {
+  font-size: 2rem;
+  margin: 30px 0 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.vertical-text {
+  font-size: 1.1rem;
+  line-height: 2;
+  margin: 0 auto 40px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.program-list {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  text-align: left;
+  line-height: 2;
+  font-size: 1.05rem;
+}
+
+.red {
+  color: #ffcccc;
+}
+.floating-box {
+  position: absolute;
+  z-index: 0;
+  animation: float 6s ease-in-out infinite;
+  opacity: 0.6;
+  border-radius: 6px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.box1 { width: 140px; height: 140px; top: 12%; left: 10%; background-color: #c8f7dc; }
+.box2 { width: 100px; height: 100px; top: 60%; right: 12%; background-color: #cde6d0; }
+.box3 { width: 60px; height: 60px; top: 40%; left: 40%; background-color: #e6f4ea; }
+.box4 { width: 80px; height: 80px; bottom: 15%; left: 20%; background-color: #d8f2e2; }
+.box5 { width: 50px; height: 50px; bottom: 5%; right: 10%; background-color: #bde8d8; }
+.floating-box {
+  position: absolute;
+  z-index: 0;
+  animation: float 5s ease-in-out infinite alternate;
+  opacity: 0.85;  
+  border-radius: 8px;
+}
+
+
+@keyframes float {
+  0%   { transform: translateY(0px) rotate(0deg); }
+  50%  { transform: translateY(-30px) rotate(2deg); }
+  100% { transform: translateY(15px) rotate(-2deg); }
+}
+.box1 { width: 140px; height: 140px; top: 10%; left: 5%; background-color: #f5c7c6; }   /* soft pink */
+.box2 { width: 100px; height: 100px; top: 25%; left: 15%; background-color: #c7e9f1; }  /* light blue */
+.box3 { width: 80px; height: 80px; top: 40%; left: 30%; background-color: #f9e79f; }    /* pastel yellow */
+.box4 { width: 60px; height: 60px; top: 55%; left: 8%; background-color: #dfd3e3; }     /* lavender */
+.box5 { width: 90px; height: 90px; bottom: 20%; left: 15%; background-color: #ffe8cc; } /* peach */
+.box6 { width: 50px; height: 50px; bottom: 10%; right: 5%; background-color: #e5fdd1; } /* light green */
+.box7 { width: 60px; height: 60px; top: 70%; right: 10%; background-color: #f2d0e5; }   /* pink purple */
+.box8 { width: 80px; height: 80px; bottom: 30%; left: 50%; background-color: #c9f5d4; } /* mint */
+.box9 { width: 100px; height: 100px; bottom: 10%; right: 30%; background-color: #fce9f1; }
+
+@keyframes float1 {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-30px) rotate(2deg); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-15px) rotate(-1deg); }
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-40px) rotate(4deg); }
+}
+
+@keyframes float4 {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-25px) rotate(-3deg); }
+}
+
+@keyframes float5 {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-35px) rotate(1deg); }
+}
+
+.box1 { animation-name: float1; }
+.box2 { animation-name: float2; }
+.box3 { animation-name: float3; }
+.box4 { animation-name: float4; }
+.box5 { animation-name: float5; }
+.box6 { animation-name: float3; }
+.box7 { animation-name: float2; }
+.box8 { animation-name: float4; }
+.box9 { animation-name: float1; }
+.box10 { animation-name: float5; }
+.box11 { animation-name: float2; }
+.box12 { animation-name: float3; }
+.box1 { animation-duration: 6s; }
+.box2 { animation-duration: 7s; }
+.box3 { animation-duration: 5s; }
+.box4 { animation-duration: 8s; }
